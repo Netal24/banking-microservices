@@ -1,6 +1,6 @@
 FROM python:3.11-slim
 WORKDIR /app
-COPY requirements.txt .
+COPY fraud_service/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY common/ ./common/
 COPY fraud_service/ ./fraud_service/

@@ -1,6 +1,6 @@
 FROM python:3.11-slim
 WORKDIR /app
-COPY requirements.txt .
+COPY transaction_service/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY common/ ./common/
 COPY transaction_service/ ./transaction_service/
